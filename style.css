@@ -242,6 +242,18 @@ footer{
   margin-top:30px;
 }
 
+.struktur-grid-custom{
+  display:grid;
+  grid-template-columns:repeat(3, 1fr);
+  gap:25px;
+  margin-top:30px;
+}
+
+@media(max-width:900px){
+  .struktur-grid-custom{
+    grid-template-columns:1fr;
+  }
+}
 /* MOBILE */
 @media(max-width:768px){
   .top-header,
