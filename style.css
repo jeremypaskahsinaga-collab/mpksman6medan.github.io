@@ -242,14 +242,30 @@ footer{
   margin-top:30px;
 }
 
+/* SUB TITLE */
+.sub-title{
+  text-align:center;
+  margin:40px 0 20px;
+  color:#003b8e;
+}
+
+/* GRID STRUKTUR */
 .struktur-grid-custom{
   display:grid;
   grid-template-columns:repeat(3, 1fr);
   gap:25px;
-  margin-top:30px;
+  margin-top:10px;
 }
 
+/* TABLET */
 @media(max-width:900px){
+  .struktur-grid-custom{
+    grid-template-columns:repeat(2, 1fr);
+  }
+}
+
+/* HP */
+@media(max-width:600px){
   .struktur-grid-custom{
     grid-template-columns:1fr;
   }
