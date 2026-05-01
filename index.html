@@ -3,115 +3,140 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MPK SMAN 6 Medan</title>
+  <title>MPK SMAN 6 MEDAN</title>
+
+  <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Poppins', sans-serif;
-    }
+</head>
+<body>
 
-    body {
-      background: #f4f8fc;
-      color: #1a1a1a;
-      overflow-x: hidden;
-    }
+  <!-- NAVIGATION -->
+  <nav>
+    <h1>MPK SMAN 6 MEDAN</h1>
+    <ul>
+      <li><a href="#beranda">Beranda</a></li>
+      <li><a href="#visi">Visi & Misi</a></li>
+      <li><a href="#struktur">Struktur</a></li>
+      <li><a href="#program">Program Kerja</a></li>
+    </ul>
+  </nav>
 
-    html {
-      scroll-behavior: smooth;
-    }
+  <!-- HERO -->
+  <header id="beranda">
+    <div class="hero">
+      <div class="hero-text">
+        <h2>Satu Visi <br><span>Satu Pandangan</span></h2>
+        <p>
+          MPK SMAN 6 Medan hadir sebagai lembaga aktif, transparan,
+          berintegritas, dan progresif dalam mengawal aspirasi siswa.
+        </p>
+        <a href="#visi" class="btn">Mulai Jelajahi</a>
+      </div>
 
-    header {
-      background: linear-gradient(135deg, rgba(0,40,85,0.95), rgba(0,89,179,0.9)),
-      url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=1600&q=80');
-      background-size: cover;
-      background-position: center;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      padding: 20px 8%;
-      color: white;
-    }
+      <div class="hero-logo">
+        <img src="logo-gabungan.png" alt="Logo MPK SMAN 6 Medan">
+      </div>
+    </div>
+  </header>
 
-    nav {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      background: rgba(0, 34, 68, 0.95);
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 15px 8%;
-      z-index: 1000;
-    }
+  <!-- VISI MISI -->
+  <section id="visi">
+    <h2 class="title">Visi & Misi</h2>
 
-    nav .logo {
-      font-size: 1.3rem;
-      font-weight: 700;
-      color: #ffd700;
-    }
+    <div class="vision-box">
+      <h3>Visi</h3>
+      <p>
+        Menjadikan MPK sebagai lembaga yang aktif, transparan, dan berintegritas
+        dalam mengawal aspirasi serta membangun budaya organisasi yang demokratis
+        dan progresif.
+      </p>
 
-    nav ul {
-      display: flex;
-      list-style: none;
-      gap: 25px;
-    }
+      <br><br>
 
-    nav ul li a {
-      color: white;
-      text-decoration: none;
-      font-weight: 500;
-      transition: 0.3s;
-    }
+      <h3>Misi</h3>
+      <p>
+        1. Menguatkan peran MPK sebagai lembaga legislatif yang aktif dan independen dalam mengawasi kinerja OSIS.<br><br>
+        2. Menjadi saluran aspirasi siswa yang terbuka, solutif, dan berorientasi demokrasi.<br><br>
+        3. Menumbuhkan karakter kepemimpinan dan integritas dalam setiap anggota MPK.<br><br>
+        4. Mendorong budaya organisasi yang bertanggung jawab melalui evaluasi rutin.
+      </p>
+    </div>
+  </section>
 
-    nav ul li a:hover {
-      color: #ffd700;
-    }
+  <!-- STRUKTUR -->
+  <section id="struktur">
+    <h2 class="title">Struktur Organisasi</h2>
 
-    .hero {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 40px;
-      flex-wrap: wrap;
-      margin-top: 80px;
-    }
+    <div class="structure-grid">
+      <div class="card"><h3>Ketua Umum</h3><p>Ishaq Newton Simbolon</p></div>
+      <div class="card"><h3>Wakil Ketua Umum</h3><p>Clarissa Hyacinta</p></div>
+      <div class="card"><h3>Sekretaris Umum</h3><p>Natasya Adellia P. Tanjung</p></div>
+      <div class="card"><h3>Wakil Sekretaris Umum</h3><p>Syauqi Aldrinov</p></div>
+      <div class="card"><h3>Bendahara Umum</h3><p>Nayla Saskia</p></div>
+      <div class="card"><h3>Wakil Bendahara Umum</h3><p>Adhim Akbar Ginting</p></div>
 
-    .hero-text {
-      flex: 1;
-      min-width: 300px;
-    }
+      <div class="card">
+        <h3>Komisi A</h3>
+        <p>Ketua: Febryano Pradytama</p>
+        <small>Vikram Assyahri, Abdurrahman Naufal, Novita L. Ida Simajuntak, Namira Athaya Aldrinov, Melati Aprilia Putri</small>
+      </div>
 
-    .hero-text h1 {
-      font-size: 4rem;
-      line-height: 1.2;
-      margin-bottom: 20px;
-    }
+      <div class="card">
+        <h3>Komisi B</h3>
+        <p>Ketua: Muhammad Fariz</p>
+        <small>Safira Wilandry, Aditya Pranata, Wahyu Waruwu, Putry Crisnadira</small>
+      </div>
 
-    .hero-text span {
-      color: #ffd700;
-    }
+      <div class="card">
+        <h3>Komisi C</h3>
+        <p>Ketua: Bagus Tegar Wasa</p>
+        <small>Nasywa Sedianto, Jeremy Paskah Sinaga, Ikhsan Al Abhsih, Syifa Yurika, Farel Merdeka P. Gultom</small>
+      </div>
+    </div>
+  </section>
 
-    .hero-text p {
-      font-size: 1.2rem;
-      max-width: 650px;
-      margin-bottom: 25px;
-    }
+  <!-- PROGRAM -->
+  <section id="program">
+    <h2 class="title">Program Kerja</h2>
 
-    .btn {
-      display: inline-block;
-      padding: 14px 30px;
-      background: #ffd700;
-      color: #002244;
-      font-weight: bold;
-      text-decoration: none;
-      border-radius: 10px;
-      transition: 0.3s;
-    }
+    <div class="programs">
+      <div class="program">
+        <h3>Komisi A</h3>
+        <p>
+          • Menghidupkan Instagram MPK<br>
+          • Pengarsipan Google Drive<br>
+          • Menyusun AD/ART
+        </p>
+      </div>
+
+      <div class="program">
+        <h3>Komisi B</h3>
+        <p>
+          • Pengawasan ekstrakurikuler<br>
+          • Wadah penyelesaian masalah ekskul<br>
+          • Pengesahan & pembekuan ekskul
+        </p>
+      </div>
+
+      <div class="program">
+        <h3>Komisi C</h3>
+        <p>
+          • Buku Dosa OSIS<br>
+          • Evaluasi wajib<br>
+          • Penilaian siswa via GForm<br>
+          • Laporan kinerja
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    © 2026 MPK SMAN 6 MEDAN | Satu Visi, Satu Pandangan
+  </footer>
+
+</body>
+</html>    }
 
     .btn:hover {
       transform: scale(1.05);
